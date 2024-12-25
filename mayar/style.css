@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    /* الابعاد الخارجية */
+    padding: 0;
+    /* الابعاد الداخلية */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* نوع الخط المستخدم*/
+
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    direction: ltr;
+    /*rtl - arabic  */
+    /* ltr - engilsh */
+}
+
+/*      قسم النافبار  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007AFF;
+    padding: 15px 30px;
+}
+
+/* .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+} */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.imgLogo {
+    width: 70px;
+    height: 70px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*      قسم السلايدر  */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('slider.jpg') no-repeat center center/cover;
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.5);
+    /* خلفية شبه شفافة */
+    border-radius: 10px;
+    /* زوايا دائرية للخلفية */
+    padding: 60px 120px;
+}
+
+.slider-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.slider-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.slider-content .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login {
+    background-color: #007AFF;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.btn-discover {
+    background-color: white;
+    /* خلفية الزر */
+    color: #007AFF;
+    /* لون الخط */
+    border: 2px solid #007AFF;
+    /* حد أزرق */
+    padding: 10px 20px;
+    /* المساحة حول النص */
+    border-radius: 5px;
+    /* زوايا دائرية */
+    font-size: 16px;
+    /* حجم الخط */
+    cursor: pointer;
+    /* تغيير المؤشر عند المرور على الزر */
+    transition: background-color 0.3s, color 0.3s;
+    /* تأثيرات الانتقال */
+
+}
+
+.btn-discover:hover {
+    background-color: #007AFF;
+    /* تغيير الخلفية عند المرور */
+    color: white;
+    /* تغيير لون الخط عند المرور */
+}
+
+.custom-button {
+    background-color: white;
+    /* خلفية الزر بيضاء */
+    color: #007AFF;
+    /* لون النص أزرق */
+    border: 2px solid #007AFF;
+    /* حد أزرق */
+    padding: 10px 20px;
+    /* المساحة حول النص */
+    border-radius: 5px;
+    /* زوايا دائرية */
+    font-size: 16px;
+    /* حجم الخط */
+    cursor: pointer;
+    /* تغيير المؤشر عند المرور على الزر */
+    transition: background-color 0.3s, color 0.3s;
+    /* تأثيرات الانتقال */
+}
+
+.custom-button:hover {
+    background-color: #007AFF;
+    /* تغيير الخلفية عند المرور */
+    color: white;
+    /* تغيير لون النص عند المرور */
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/*      قسم الخدمات  */
+
+.services-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* المسافة بين البطاقات */
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(25% - 40px);
+    /* 4 بطاقات في الصف */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    /* تأثير عند تمرير الفأرة */
+}
+
+.service-card img {
+    width: 100%;
+    /* ملء عرض البطاقة */
+    height: auto;
+    /* الحفاظ على نسبة الطول إلى العرض */
+    border-radius: 5px;
+    /* زوايا دائرية للصورة */
+    margin-bottom: 15px;
+    /* مسافة بين الصورة والعنوان */
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* قسم الفورم */
+.contact-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.contact-section p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    /* السماح بتغيير الحجم عموديًا فقط */
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #476584;
+}
+
+/* *---------------------------------- */
+/* قسم الفوتر */
+
+.footer {
+    background-color: #007AFF;
+    /* لون خلفية التذييل */
+    color: white;
+    /* لون النص */
+    padding: 20px;
+    /* المساحة حول المحتوى */
+    text-align: center;
+    /* توسيط النص */
+}
+
+.footer img {
+    height: 80px;
+    /* تغيير حجم الشعار حسب الحاجة */
+    margin-bottom: 20px;
+    /* مسافة بين الشعار والنص */
+}
+
+.footer ul {
+    list-style: none;
+    /* إزالة النقاط من القائمة */
+    padding: 0;
+    /* إزالة المساحة الافتراضية */
+    margin: 0;
+    /* إزالة الهامش الافتراضي */
+}
+
+.footer ul li {
+    display: inline;
+    /* جعل العناصر في سطر واحد */
+    margin: 0 15px;
+    /* مسافة بين الروابط */
+}
+
+.footer ul li a {
+    color: white;
+    /* لون الروابط */
+    text-decoration: none;
+    /* إزالة الخط أسفل الروابط */
+    transition: color 0.3s;
+    /* تأثير التغيير في اللون */
+}
+
+.footer ul li a:hover {
+    color: #ddd;
+    /* تغيير لون الروابط عند المرور */
+}
